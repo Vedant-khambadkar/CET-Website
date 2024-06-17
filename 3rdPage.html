@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/3rdPage.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="box">
+            <div id="nav">
+                <div id="left">Photo</div>
+                <div id="middle">
+                    <div id="userID"><h3>Username : <span id="userName"></span></h3></div>
+                    
+
+                    <div id="center"><h3>Email : <span id="userEmail"></span></h3></div>
+                    
+                </div>
+                <div id="right">
+                    <div id="time">Enrollment No :<span id="userEnrollment_NO"></span></div>
+                    <div id="time"><span id="minute"></span>  :  <span id="sec"></span></div>
+                </div>
+            </div>
+            <div id="mainContent">
+                <div id="data">
+                    <div id="lft">
+                        <div id="queNo">
+                           
+                            
+                        </div>
+                        <div id="exam">
+                            <h1>Exam Summery</h1>
+                        </div>
+
+                        <div class="smbox">
+
+                            <div id="answer">
+                                <h2>Answer : <span id="Anss"></span></h2>
+                            </div>
+                            <div id="not_answer">
+                                <h2>Not Answer :<span id="notAns"></span></h2>
+                            </div>
+                            <div id="not_visited">
+                                <h2>Not visited : <span id="notVisited"></span></h2>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="rgt">
+                        <div id="upper_box">
+                            <div id="quet">
+                                <h1 id="h1"></h1>
+                            </div>
+                        </div>
+                        <div id="lower_box">
+                            <form action="" id="formation">
+                                
+                                <div class="opt1">
+                                    <input type="radio" name="a"  id="op1" onfocus="color()">
+                                    <span><h3 id="opt1"></h3></span>
+                                </div> 
+                                <div class="opt1">
+                                    <input type="radio" name="a" onclick="color()"  id="op2">
+                                    <span><h3 id="opt2"></h3></span>
+                                    
+                                    
+                                </div>
+                                <div class="opt1">
+                                    <input type="radio" name="a" onclick="color()" id="op3">
+                                    <span><h3 id="opt3"></h3></span>
+                                    
+                                    
+                                </div>
+                                <div class="opt1">
+                                    <input type="radio" name="a" onclick="color()" id="op4">
+                                    <span><h3 id="opt4"></h3></span>
+                                    
+                                    
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            <div id="shift_Button">
+                <button type="button" onclick="preQue()">Previous</button>
+                <button type="button" onclick="nextQue()">Next</button>
+                <!-- <button type="button" onclick="Reset()">Reset</button> -->
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/3rdPage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+
+    <section class="container-fluid">
+        <div class="container header">
+            <h1>USER PANEL</h1>
+            <button onclick="createUser()"> <h4>Create USER</h4> </button>
+            <button id="LOGIN"> <h4> <a href="./1stPage.html">LOG-IN</a></h4> </button>
+        </div>
+    </section>
+
+    <section class="container_fluid">
+        <div class="container table_container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Enroll NO</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone NO</th>
+                        <th>DOB</th>
+                        <th>Actions</th>
+
+                    </tr>
+                </thead>
+                <tbody id="User_data">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Add Movie Section -->
+
+    <div class="vew-modal" id="addmodal">
+        <div class="viw-modal-container">
+
+            <div class="close-modal">
+                <i class="fa-solid fa-xmark" onclick="closeModel('addmodal')" ></i>
+            </div>
+
+            <div class="user_details" style="flex-direction: column;">
+
+                <h1 style="color:black;text-align:center"><u>ADD NEW USER</u></h1>
+
+                <form class="user_input" id="addUserFormID">
+                    <input type="text" placeholder="Enter Name" id="addName" value=""  required>
+                    <input type="email" placeholder="Enter Email add @gmail.com"  value="" id="addEmail" required>
+                    <input type="number" placeholder="Enter Phone NO" id="addNo" value=""  required>
+                    <input type="date" placeholder="Enter DOB" id="addDate" required >
+            
+                    <button type="button" onclick="fill()">ADD USER</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="vew-modal" id="Updatemodal">
+        <div class="viw-modal-container">
+
+            <div class="close-modal">
+                <i class="fa-solid fa-xmark" onclick="closeModel('Updatemodal')" ></i>
+            </div>
+
+            <div class="user_details" style="flex-direction: column;">
+
+                <h1 style="color:black;text-align:center"><u>UPDATE USER</u></h1>
+
+                <form class="user_input" id="UpdateUserFormID">
+                    <input type="text" placeholder="Enter Name" id="updateName"  required>
+                    <input type="email" placeholder="Enter Email add @gmail.com" id="updateEmail" required>
+                    <input type="number" placeholder="Enter Phone NO" id="updateNo"   required>
+                    <input type="date" placeholder="Enter DOB" id="updateDate" required >
+                    <input type="number" placeholder="Enter DOB" id="updateEnroll" required style="display:none;" >
+            
+                    <button type="button" onclick="UpdateUserData()" style="background-color:yellow;color:black ">UPDATE USER</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
